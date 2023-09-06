@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Weather Forecast</title> 
+    <link rel="shortcut icon" href="images/weather-app.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="inner-item my-3 shadow">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.315);"> 
+                    <div class="row justify-content-between pe-4 align-items-center">
+                        <div class="col-5">
+                            <h2 class="">forecast</h2>  
+                        </div> 
+                        <div class="col-4">
+                            <div class="input-group rounded w-100 input-group-sm position-relative">
+                                <input type="text" id="searchInput" class="rounded form-control p-2" placeholder="Enter Location"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class=" ps-4 pb-4 text-white">
+                            <h1 id="degree" class="ps-0 pb-0 fw-bold" style="font-size: 5rem ;"></h1> 
+                            <h3 id="county-location" class=" fw-bold"></h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-end my-4 px-4">
+                            <h3 id="timeZone" class="h2 mb-0  text-white fw-bold ">Time</h3> 
+                            <p class="text-white mb-3" id="fullDate"></p>                     
+                        </div>
+                    </div>  
+                </div>
+            </div>
+    </section>
+
+<div class="row g-2 px-3 justify-content-center align-items-center"> 
+    <div class="col-md-4 col-sm-6"> 
+        <div class="rounded-2 h-100 shadow p-2 bg-white">
+            <p class=" fw-bold fs-2 mb-1 text-center  mt-0">Next day</p>  
+            <p id="dateOne" class="px-2 text-center text-muted"></p>
+
+            <div class="d-flex my-0 py-0 px-2 justify-content-between align-items-center ">
+                <h3 id="county-location_nextDay" class=" fw-bold text-black"></h3>
+                <h6 id="degreeOne" class="fw-bold fs-1"></h6>
+            </div>
+            <div class="d-flex px-2 justify-content-between align-items-center">
+                <h5 id="statusOne"></h5>
+                <img src="" id="imgStatusOne" alt="">
+
+            </div>
+        </div>
+    </div> 
+    <div class="col-md-4 col-sm-6"> 
+        <div class="h-100 bg-white p-2 rounded-2 shadow py-2"> 
+            <p class=" fw-bold fs-2 mb-1 text-center mt-0">Day after next</p>  
+            <p id="dateTwo" class="px-2 text-center text-muted"></p>
+
+            <div class="d-flex my-0 py-0 px-2 justify-content-between align-items-center ">
+                <h3 id="county-location_dayAfterNext" class=" fw-bold text-black"></h3>
+                <h6 id="degreeTwo" class="fw-bold fs-1"></h6>
+            </div>
+            <div class="d-flex px-2 justify-content-between align-items-center">
+                <h5 id="statusTwo"></h5>
+                <img src="" id="imgStatusTwo" alt="">
+
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
